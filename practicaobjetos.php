@@ -1,5 +1,6 @@
 <?php
-   
+   var_dump($_GET);
+   var_dump($_POST);
    class persona{
        protected $nombre;
        protected $velocidad;
@@ -39,10 +40,13 @@
         FORMULARIO CONECTADO A UNA BASE DE DATOS
     </h1>
 
-    <form>
-        Nombre: <input type="text"> </br></br>
-        Apellido: <input type="text"> </br> </br>
-        Email: <input type="email">  </br></br>
+    <form action="practicaobjetos.php" method="post">
+        <label for="">Nombre: </label>
+        <input type="text" name="nombre"> </br> </br>
+        <label for="">Apellido: </label>
+        <input type="text"name="apellido"> </br> </br>
+        <label for="">Email: </label>
+        <input type="email"name="email"> </br> </br>
         <button type="submit"> Aceptar </button>
     </form>
 </section>
